@@ -98,7 +98,15 @@ const Initial = styled.div`
   `}
 `;
 
+/**
+ * - Use an avatar for attributing actions or content to specific users.
+ * @param {*} param0 
+ * @returns "Aaaahh"
+ */
 export function Avatar({ loading, username, src, size, ...props }) {
+  /**
+   * - Use an avatar for attributing actions or content to specific users.
+   */
   let avatarFigure = <Icon icon="useralt" />;
   const a11yProps = {};
 
