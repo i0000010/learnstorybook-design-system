@@ -5,7 +5,7 @@ test('has a href attribute when rendering with linkWrapper', () => {
   // eslint-disable-next-line jsx-a11y/anchor-has-content
   const LinkWrapper = props => <a {...props} />;
   const { container } = render(
-    <Link href="https://storybook.js.org/tutorial" LinkWrapper={LinkWrapper}>
+    <Link href="https://storybook.js.org/tutorials/" LinkWrapper={LinkWrapper}>
       Link Text
     </Link>
   );
