@@ -16,5 +16,5 @@ jobs:
       # Adds Chromatic as a step in the workflow
       - uses: chromaui/actions@v1
       # Options required for Chromatic's GitHub Action
-      projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }} #e8d7ae8c4299
+      projectToken: e8d7ae8c4299
       token: ${{ secrets.GITHUB_TOKEN }}
