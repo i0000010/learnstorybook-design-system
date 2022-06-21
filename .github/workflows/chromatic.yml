@@ -1,0 +1,20 @@
+# name of our action
+name: 'Chromatic'
+
+# The event that will trigger the action
+on: push
+
+# What the action will do
+jobs:
+  test:
+    # The OS will run on
+    runs-on: ubuntu-latest
+    # List of steps the action will go through
+    steps:
+      - uses: actions/checkout@v1
+      - run: yarn
+      # Adds Chromatic as a step in the workflow
+      - uses: chromaui/actions@v1
+      # Options required for Chromatic's GitHub Action
+      projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }} #e8d7ae8c4299
+      token: ${{ secrets.GITHUB_TOKEN }}

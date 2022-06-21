@@ -19,7 +19,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "chromatic": "npx chromatic --project-token=e8d7ae8c4299"
   },
   "eslintConfig": {
     "extends": [
@@ -61,6 +62,9 @@
     "@storybook/preset-create-react-app": "^3.2.0",
     "@storybook/react": "^6.5.9",
     "@storybook/testing-library": "^0.0.13",
+    "chromatic": "^6.6.3",
     "prettier": "^2.7.1"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "learnstorybook-design-system-template@0.1.0"
 }
