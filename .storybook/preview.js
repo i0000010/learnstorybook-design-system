@@ -18,6 +18,13 @@ export const decorators = [
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
+  // Storybook a11y addon config
+  a11y: {
+    // target DOM element
+    element: "#root",
+    // set exclusion mode for addon
+    manual: false,
+  },
   controls: {
     matchers: {
       color: /(background|color)$/i,
